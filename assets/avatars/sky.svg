@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" fill="none" role="img" aria-labelledby="title">
+  <title id="title">Sky character avatar</title>
+  <desc>An original illustration of a fictional adult character.</desc>
+  <defs><clipPath id="portrait"><rect width="160" height="160" rx="28"/></clipPath></defs>
+  <g clip-path="url(#portrait)" stroke-linecap="round" stroke-linejoin="round">
+    <rect width="160" height="160" rx="28" fill="#E4EEF5"/>
+    <circle cx="134" cy="27" r="31" fill="white" opacity=".28"/>
+    <circle cx="17" cy="137" r="34" fill="#678EAC" opacity=".08"/>
+    <path d="M48 72c-1-25 11-42 32-42 23 0 34 16 33 41l-8 20H54z" fill="#557C94"/>
+    <path d="M25 160v-17c0-18 14-29 39-34l16 9 16-9c25 5 39 16 39 34v17z" fill="#7199B7"/>
+    <path d="M69 95h22v22l-11 10-11-10z" fill="#DDA887"/>
+    <path d="M69 99h22v9c-6 5-16 5-22 0z" fill="#C89475"/>
+    <ellipse cx="53" cy="78" rx="5" ry="9" fill="#DDA887"/>
+    <ellipse cx="107" cy="78" rx="5" ry="9" fill="#DDA887"/>
+    <ellipse cx="80" cy="75" rx="27" ry="33" fill="#DDA887"/>
+    <path d="M48 69c-3-11 2-27 16-34 9-10 24-11 36-4 14 7 16 20 10 32-3-9-8-13-14-16-6 12-18 21-35 22l8-12c-5 4-12 8-21 12z" fill="#557C94"/><path d="M66 41c7-7 19-10 29-5" fill="none" stroke="#81ABB9" stroke-width="4"/><path d="M102 64l8 12-5 12-5-11z" fill="#557C94"/>
+    <path d="M62 69q6-4 12-1M86 68q6-3 12 1" stroke="#557C94" stroke-width="2.3"/>
+    <ellipse cx="69" cy="77" rx="1.7" ry="2.5" fill="#382E35"/>
+    <ellipse cx="92" cy="77" rx="1.7" ry="2.5" fill="#382E35"/>
+    <path d="M80 79l-2 8h4" stroke="#C89475" stroke-width="1.6"/>
+    <path d="M71 95q9 7 18 0" stroke="#8B554C" stroke-width="2.2"/>
+    <ellipse cx="61" cy="88" rx="5" ry="2.5" fill="#CF8174" opacity=".18"/>
+    <ellipse cx="99" cy="88" rx="5" ry="2.5" fill="#CF8174" opacity=".18"/>
+    <path d="M59 117c10 14 32 14 42 0" fill="none" stroke="#C5DBEA" stroke-width="4"/><path d="M110 85l3 4-3 4-3-4z" fill="#D7C4E6"/><path d="M48 146h20M48 152h14" stroke="#C7DCEA" stroke-width="3"/>
+  </g>
+</svg>
+

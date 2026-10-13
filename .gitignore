@@ -1,0 +1,13 @@
+.venv/
+.models/
+__pycache__/
+*.py[cod]
+outputs/
+artifacts/
+app.stdout.log
+app.stderr.log
+deployment/
+.env
+.env.*
+browser/node_modules/
+browser/dist/

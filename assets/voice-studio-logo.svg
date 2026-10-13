@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-labelledby="logo-title">
+  <title id="logo-title">Voice Studio logo</title>
+  <defs>
+    <linearGradient id="violet" x1="8" y1="4" x2="57" y2="64" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8B6AD3"/>
+      <stop offset="1" stop-color="#6041A8"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="18" fill="url(#violet)"/>
+  <rect x="1" y="1" width="62" height="62" rx="17" stroke="white" stroke-opacity=".12" stroke-width="2"/>
+  <path d="M24 12H40C48 12 54 18 54 26V32C54 40 48 46 40 46H28L16 53L19 43C14 41 11 36 11 30V26C11 18 16 12 24 12Z" fill="#FFFDFA"/>
+  <rect x="28.5" y="19" width="8" height="16" rx="4" fill="#7251BC"/>
+  <path d="M24 29.5V31C24 35.7 27.8 39.5 32.5 39.5C37.2 39.5 41 35.7 41 31V29.5M32.5 39.5V43M28.5 43H36.5" stroke="#7251BC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

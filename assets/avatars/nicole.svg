@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" fill="none" role="img" aria-labelledby="title">
+  <title id="title">Nicole character avatar</title>
+  <desc>An original illustration of a fictional adult character.</desc>
+  <defs><clipPath id="portrait"><rect width="160" height="160" rx="28"/></clipPath></defs>
+  <g clip-path="url(#portrait)" stroke-linecap="round" stroke-linejoin="round">
+    <rect width="160" height="160" rx="28" fill="#E4EEE7"/>
+    <circle cx="134" cy="27" r="31" fill="white" opacity=".28"/>
+    <circle cx="17" cy="137" r="34" fill="#62887A" opacity=".08"/>
+    <path d="M40 74c-5-20 5-35 17-41 7-11 18-13 28-8 13-5 26 5 29 13 15 5 21 22 15 39 5 14-3 28-13 33H46c-13-11-15-23-6-36z" fill="#352826"/><circle cx="51" cy="46" r="12" fill="#352826"/><circle cx="74" cy="32" r="13" fill="#352826"/><circle cx="98" cy="37" r="13" fill="#352826"/><circle cx="117" cy="56" r="13" fill="#352826"/>
+    <path d="M25 160v-17c0-18 14-29 39-34l16 9 16-9c25 5 39 16 39 34v17z" fill="#62887A"/>
+    <path d="M69 95h22v22l-11 10-11-10z" fill="#986546"/>
+    <path d="M69 99h22v9c-6 5-16 5-22 0z" fill="#815438"/>
+    <ellipse cx="53" cy="78" rx="5" ry="9" fill="#986546"/>
+    <ellipse cx="107" cy="78" rx="5" ry="9" fill="#986546"/>
+    <ellipse cx="80" cy="75" rx="27" ry="33" fill="#986546"/>
+    <path d="M51 72c0-12 4-22 9-26 13 6 24 6 35-4 10 6 15 16 16 29-7-2-10-5-13-11-8 7-20 8-28 3-4 7-11 10-19 9z" fill="#352826"/><path d="M48 48c5-8 10-11 16-13M90 31c8 1 14 6 18 12" fill="none" stroke="#534038" stroke-width="4"/>
+    <path d="M62 69q6-4 12-1M86 68q6-3 12 1" stroke="#352826" stroke-width="2.3"/>
+    <ellipse cx="69" cy="77" rx="1.7" ry="2.5" fill="#382E35"/>
+    <ellipse cx="92" cy="77" rx="1.7" ry="2.5" fill="#382E35"/>
+    <path d="M80 79l-2 8h4" stroke="#815438" stroke-width="1.6"/>
+    <path d="M71 95q9 7 18 0" stroke="#8B554C" stroke-width="2.2"/>
+    <ellipse cx="61" cy="88" rx="5" ry="2.5" fill="#CF8174" opacity=".18"/>
+    <ellipse cx="99" cy="88" rx="5" ry="2.5" fill="#CF8174" opacity=".18"/>
+    <path d="M55 120l25 15 25-15" fill="none" stroke="#A2BEAB" stroke-width="3"/><circle cx="53" cy="87" r="5" fill="none" stroke="#D7AF69" stroke-width="2"/><circle cx="107" cy="87" r="5" fill="none" stroke="#D7AF69" stroke-width="2"/>
+  </g>
+</svg>
+

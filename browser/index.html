@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#6d50bc">
+    <meta name="description" content="Choose from twelve character voices and create English speech directly in your browser with Voice Studio.">
+    <title>Voice Studio · Character voices</title>
+    <link rel="icon" href="./assets/voice-studio-favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#script">Skip to your script</a>
+    <div class="studio-shell">
+      <header class="studio-navigation">
+        <a class="studio-brand" href="./" aria-label="Voice Studio home">
+          <img class="studio-mark" src="./assets/voice-studio-logo.svg" alt="" width="44" height="44">
+          <span><strong>Voice Studio</strong><small>A little character. A lot of possibility.</small></span>
+        </a>
+        <span class="studio-badge">English · On your device</span>
+      </header>
+
+      <section class="studio-intro" aria-labelledby="studio-title">
+        <div>
+          <p class="studio-eyebrow">MAKE EVERY WORD YOURS</p>
+          <h1 id="studio-title">Bring your words to life.</h1>
+          <p class="intro-description">Find the character that fits your story. Write your script, shape the pace, and create speech you can listen to and keep.</p>
+        </div>
+        <div class="studio-voice-count"><strong id="voice-count">12</strong><span>distinct voices to explore</span></div>
+      </section>
+
+      <main class="studio-workspace" id="workspace" aria-busy="false">
+        <aside class="studio-panel character-panel" aria-labelledby="character-heading">
+          <div class="panel-heading">
+            <div class="panel-title"><span class="panel-number" aria-hidden="true">02</span><h2 id="character-heading">Choose a character</h2></div>
+            <span class="panel-note" id="character-count">12 voices</span>
+          </div>
+          <p class="panel-description">Different characters. Distinct voices. Find your favorite.</p>
+          <fieldset class="character-fieldset">
+            <legend class="visually-hidden">Character voice</legend>
+            <div class="character-grid" id="character-choices"></div>
+          </fieldset>
+
+          <div class="selected-character" aria-live="polite" aria-atomic="true">
+            <img id="selected-avatar" class="character-avatar" alt="" width="52" height="52">
+            <div>
+              <p class="character-selected-label">Selected character</p>
+              <p class="character-name"><strong id="selected-name"></strong><span id="selected-role"></span></p>
+              <p id="selected-description" class="character-description"></p>
+              <p id="selected-accent" class="character-accent"></p>
+            </div>
+          </div>
+          <button type="button" class="preview-button" id="preview">Preview this voice</button>
+
+          <p class="settings-heading">FINE-TUNE THE DELIVERY</p>
+          <div class="voice-setting">
+            <div class="setting-label"><label for="speed">Speaking speed</label><output for="speed" id="speed-value">1.00×</output></div>
+            <p class="setting-description" id="speed-description">1.0 is natural speed. Lower is slower.</p>
+            <input type="range" id="speed" min="0.75" max="1.5" step="0.05" value="1" aria-describedby="speed-description">
+            <div class="range-limits" aria-hidden="true"><span>0.75×</span><span>1.50×</span></div>
+          </div>
+          <div class="voice-setting">
+            <div class="setting-label"><label for="pause">Pause between sections</label><output for="pause" id="pause-value">220 ms</output></div>
+            <p class="setting-description" id="pause-description">Adds a pause between sentences and longer script sections.</p>
+            <input type="range" id="pause" min="0" max="1000" step="20" value="220" aria-describedby="pause-description">
+            <div class="range-limits" aria-hidden="true"><span>No extra pause</span><span>1 second</span></div>
+          </div>
+        </aside>
+
+        <div class="main-column">
+          <section class="studio-panel script-panel" aria-labelledby="script-heading">
+            <div class="panel-heading">
+              <div class="panel-title"><span class="panel-number" aria-hidden="true">01</span><h2 id="script-heading">Your script</h2></div>
+              <span class="panel-note">Start with an idea</span>
+            </div>
+            <label class="visually-hidden" for="script">Script to read aloud</label>
+            <textarea id="script" maxlength="20000" rows="11" placeholder="Type or paste your English script here…" aria-describedby="script-count reading-time">Every great idea starts with a story. Choose a voice, add your words, and bring your next story to life. Welcome to Voice Studio.</textarea>
+            <div class="script-statistics">
+              <span id="script-count"><strong id="character-total">0</strong> / 20,000 characters</span>
+              <span id="reading-time"><span id="word-total">0</span> words · About <strong id="duration-estimate">0:00</strong></span>
+            </div>
+            <div class="script-meter" aria-hidden="true"><span id="script-meter-fill"></span></div>
+
+            <p class="sample-heading">NEED A STARTING POINT?</p>
+            <div class="sample-row" aria-label="Sample scripts">
+              <button type="button" class="sample-button" data-sample="story">Story</button>
+              <button type="button" class="sample-button" data-sample="presentation">Presentation</button>
+              <button type="button" class="sample-button" data-sample="advertisement">Advertisement</button>
+              <button type="button" class="clear-button" id="clear-script">Clear script</button>
+            </div>
+            <button type="button" class="generate-button" id="generate">Generate speech</button>
+            <p class="generate-note">First use downloads about 92 MB. Speech is created on your device; speed depends on your browser.</p>
+          </section>
+
+          <section class="studio-panel recording-panel" id="recording-panel" aria-labelledby="recording-heading">
+            <div class="panel-heading">
+              <div class="panel-title"><span class="panel-number" aria-hidden="true">03</span><h2 id="recording-heading">Your recording</h2></div>
+              <span class="panel-note">Listen. Download. Share.</span>
+            </div>
+            <div class="recording-placeholder" id="recording-placeholder">
+              <svg viewBox="0 0 32 32" width="32" height="32" fill="none" aria-hidden="true"><path d="M6 12v8M11 8v16M16 4v24M21 9v14M26 12v8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+              <span>Your next recording starts here.</span>
+            </div>
+            <audio id="recording-audio" controls preload="metadata" aria-label="Speech recording" hidden></audio>
+            <p class="recording-status" id="recording-status" role="status" aria-live="polite" aria-atomic="true">Ready when you are. Choose a character and generate your first take.</p>
+            <div class="generation-progress" id="generation-progress" hidden>
+              <progress id="progress" value="0" max="1" aria-label="Speech generation progress"></progress>
+              <button type="button" id="cancel" class="cancel-button">Cancel</button>
+            </div>
+            <a class="download-button" id="download" download hidden>
+              <svg viewBox="0 0 24 24" width="17" height="17" fill="none" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 16v4h14v-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Download WAV</span><small id="download-size"></small>
+            </a>
+          </section>
+        </div>
+      </main>
+
+      <footer class="studio-footer">
+        <div class="footer-notes"><span>Made for stories, presentations, and everyday ideas.</span><span>English voices · Up to 20,000 characters per take</span></div>
+        <p class="developer-credit">Developed by <a href="https://kamipierre.vercel.app/" target="_blank" rel="noopener noreferrer">KAMI Pierre</a><span class="developer-separator"> · </span><span class="developer-role">Full-stack System Developer</span></p>
+      </footer>
+      <noscript><p class="noscript-note">Enable JavaScript to choose a voice and create speech in your browser.</p></noscript>
+    </div>
+    <script type="module" src="./src/app.js"></script>
+  </body>
+</html>
